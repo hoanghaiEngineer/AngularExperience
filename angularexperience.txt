@@ -1,0 +1,12 @@
+textbox format:
+type="text" mask="000" maxlength="3" -> validate input type number
+type="text" mask="000-000-0000" maxlength="12" => phone validate;
+
+Angular get year:
+const date = new Date();
+date.getFullYear();
+example
+if (Number(this.foreignLanguageLevel.tOEICAcquisitionYear) > date.getFullYear()) {
+    this.toastsManager.error('The TOEIC(R)\'s test year score cannot be greater than the current year!');
+    return false;
+}
